@@ -15,7 +15,6 @@ const Top = () => (
 );
 
 const Wrapper = styled.div`
-  /* display: flex; */
   text-align: center;
 `;
 const Description = styled.p`

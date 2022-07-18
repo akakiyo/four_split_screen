@@ -7348,6 +7348,11 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-multi-split-pane@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/react-multi-split-pane/-/react-multi-split-pane-0.3.3.tgz#fe0988eb8f49036111f761f0020259c308519ef7"
+  integrity sha512-8HhR9Em/HbkNgYKLlEaVkK/qNvZOQeN9thXoHpLKvwRWb5pHbN/Z7QgebRVrGFS/cSU6WKhWi9MRCSl6UMpC9Q==
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
