@@ -6,17 +6,20 @@ const Top = () => (
   <>
     <Header />
     <Wrapper>
-      <Description> 数字・記号専用のタイピング練習ゲーム</Description>
+      <Description>4つに分割されている画面に対してどこを見ているか</Description>
       <Link to="/play">
-        <PlayButton>プレイする</PlayButton>
+        <PlayButton>測定開始</PlayButton>
       </Link>
     </Wrapper>
   </>
 );
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  /* display: flex; */
+  text-align: center;
+`;
 const Description = styled.p`
-  color: white;
+  color: black;
   font-size: 30px;
 `;
 const PlayButton = styled.button`
@@ -26,6 +29,7 @@ const PlayButton = styled.button`
   border-radius: 40px;
   border: none;
   background: #16c4fd;
+  margin: 0 auto;
 `;
 
 export default Top;

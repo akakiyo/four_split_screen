@@ -1,15 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { JsxAttributeLike } from "typescript";
 
-const Header = (): JSX.Element => {
-  return <Wrapper>脳波測定</Wrapper>;
-};
+const Header = (): JSX.Element => (
+  <Wrapper>
+    <Title>脳波測定</Title>
+  </Wrapper>
+);
+
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
+  height: 100%;
   width: 100%;
-  background-color: #000000;
+  background: #5dbcff;
+`;
+const Title = styled.div`
+  width: 100%;
+  color: #ffffff;
+  line-height: 112px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-size: 80px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
 `;
 export default Header;
