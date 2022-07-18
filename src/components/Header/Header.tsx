@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { JsxAttributeLike } from "typescript";
 
 const Header = (): JSX.Element => (
   <Wrapper>

@@ -52,7 +52,6 @@ const Play = () => {
             displayCounts[2] === 50 &&
             displayCounts[3] === 50
           ) {
-            console.log("ページ遷移");
             navigate("/result");
           }
 
