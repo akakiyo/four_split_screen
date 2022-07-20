@@ -6,8 +6,8 @@ import styled from "styled-components";
 import Image from "./img/mole.jpg";
 
 const Play = () => {
-  const [pauseTime, setPauseTime] = useState<number>(1000);
-  const [lookTime, setLookTime] = useState<number>(1000);
+  const [pauseTime, setPauseTime] = useState<number>(3000);
+  const [lookTime, setLookTime] = useState<number>(3000);
   const [isLooking, setIsLooking] = useState<boolean>(false);
   const [lookingPlace, setLookingPlace] = useState<number>(); //0:左上、1:右上、2:左下,3:右下
   const [displayCounts, setDisplayCounts] = useState<Array<number>>([

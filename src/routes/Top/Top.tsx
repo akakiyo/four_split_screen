@@ -10,6 +10,11 @@ const Top = () => (
       <Link to="/play">
         <PlayButton>測定開始</PlayButton>
       </Link>
+
+      <Description>オズボーン</Description>
+      <Link to="/osborn">
+        <PlayButton>測定開始</PlayButton>
+      </Link>
     </Wrapper>
   </>
 );
