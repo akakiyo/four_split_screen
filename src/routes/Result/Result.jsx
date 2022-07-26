@@ -7,13 +7,10 @@ import { CSVLink } from "react-csv";
 const Result = () => {
   const location = useLocation();
   const data = location?.state?.data;
-  const fileName = location?.state?.date + ".csv";
-  const headers = [
-    { label: "count", key: "count" },
-    { label: "musicNum", key: "musicNum" },
-    { label: "startTime", key: "startTime" },
-    { label: "endTime", key: "endTime" },
-  ];
+  const headers = location.state.headers;
+  const fileName =
+    location?.state?.date + "_" + location.state.experimentName + ".csv";
+
   return (
     <>
       <Header />

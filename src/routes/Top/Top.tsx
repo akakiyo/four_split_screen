@@ -11,8 +11,8 @@ const Top = () => (
         <PlayButton>測定開始</PlayButton>
       </Link>
 
-      <Description>オズボーン</Description>
-      <Link to="/osborn">
+      <Description>オドボール課題</Description>
+      <Link to="/oddball">
         <PlayButton>測定開始</PlayButton>
       </Link>
     </Wrapper>

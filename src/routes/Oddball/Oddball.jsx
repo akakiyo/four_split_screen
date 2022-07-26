@@ -5,7 +5,7 @@ import moment from "moment";
 import Sound1 from "./music/1000Hz.mp3";
 import Sound2 from "./music/2000Hz.mp3";
 
-const Osborn = () => {
+const Oddball = () => {
   const [play1, ExposedData] = useSound(Sound1);
   const [play2, ExposedData2] = useSound(Sound2);
   const [isListening, setIsListening] = useState(false);
@@ -16,6 +16,13 @@ const Osborn = () => {
   const navigate = useNavigate();
   // const count1 = 75;
   // const count2 = 25;
+  const headers = [
+    { label: "count", key: "count" },
+    { label: "musicNum", key: "musicNum" },
+    { label: "startTime", key: "startTime" },
+    { label: "endTime", key: "endTime" },
+  ];
+  const experimentName = "odball";
   const count1 = 3;
   const count2 = 1;
   const [experimentCount, setExperimentCount] = useState(0);
@@ -74,7 +81,14 @@ const Osborn = () => {
           const tmpCount = experimentCount + 1;
           setExperimentCount(tmpCount);
           if (tmpCount === 25) {
-            navigate("/result", { state: { data: data, date: date } });
+            navigate("/result", {
+              state: {
+                data: data,
+                date: date,
+                experimentName: experimentName,
+                headers: headers,
+              },
+            });
           } else {
             const tmp = playCounts;
             tmp[0] = 0;
@@ -84,7 +98,7 @@ const Osborn = () => {
         }
         setIsListening(true);
       }
-    }, 200);
+    }, 1500);
     return () => {
       clearInterval(lookInterval);
     };
@@ -97,4 +111,4 @@ const Osborn = () => {
   );
 };
 
-export default Osborn;
+export default Oddball;
